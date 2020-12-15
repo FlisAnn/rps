@@ -1,10 +1,15 @@
-describe('A User can see play buttons', () => {
+describe("A User can see play buttons", () => {
   beforeEach(() => {
-    cy.visit("/")
-  })
-  it('displays three buttons', () => {
-    cy.get("[data-cy='rock-button']").click()
-    cy.get("[data-cy='paper-button']").click()
-    cy.get("[data-cy='scissors-button']").click()
+    cy.visit("/");
   });
-})
+  it("Player can choose Rock", () => {
+    cy.get("[data-cy='rock-button']").click();
+  });
+
+  it("Player can choose Paper", () => {
+    cy.get("[data-cy='paper-button']").click();
+  });
+  it("Player can choose Scissors", () => {
+    cy.get("[data-cy='scissors-button']").click();
+  });
+});
