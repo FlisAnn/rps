@@ -4,5 +4,6 @@ describe('A User can see play buttons', () => {
   })
   it('displays three buttons', () => {
     cy.get("[data-cy='rock-button']").click()
+    cy.get("[data-cy='paper-button']").click()
   });
 })
