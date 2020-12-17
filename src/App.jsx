@@ -13,6 +13,7 @@ function App() {
       <button data-cy="paper-computer">Paper</button>
       <button data-cy="scissors-computer">Scissors</button>
       <p data-cy="tie-message">It's a tie!</p>
+      <p data-cy="human-wins">You win!</p>
     </>
   );
 }
