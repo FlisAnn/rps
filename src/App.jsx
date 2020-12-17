@@ -6,7 +6,8 @@ function App() {
      <button data-cy="scissors-button">Scissors</button>
 
      <button data-cy="rock-computer">Rock</button>
-     <button data-cy="paper-computer">Rock</button>
+     <button data-cy="paper-computer">Paper</button>
+     <button data-cy="scissors-computer">Scissors</button>
     </>
   );
 }
