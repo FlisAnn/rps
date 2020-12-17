@@ -7,7 +7,7 @@ describe("User can see the result of the game", () => {
         }
       })
     })
-    it('Human selects rock makes a tie', () => {
+    it('and Human selects rock it is a tie', () => {
       cy.get("[data-cy='rock-button']").click()
       cy.get("[data-cy='tie-message']")
     } )
