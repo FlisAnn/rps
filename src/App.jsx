@@ -14,6 +14,7 @@ function App() {
       <button data-cy="scissors-computer">Scissors</button>
       <p data-cy="tie-message">It's a tie!</p>
       <p data-cy="human-wins">You win!</p>
+      <p data-cy="computer-wins">Computer wins!</p>
     </>
   );
 }
