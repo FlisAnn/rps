@@ -17,6 +17,7 @@ describe("A User can see play buttons", () => {
   it('shows the computer options', () => {
     cy.get("[data-cy='rock-computer']").click();
     cy.get("[data-cy='paper-computer']").click();
+    cy.get("[data-cy='scissors-computer']").click();
     
   });
 
