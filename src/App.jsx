@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Container } from 'semantic-ui-react'
 import winner from "./modules/ChoosingAWinner";
 import TopHeader from './components/TopHeader'
+import Footer from './components/Footer'
 
 class App extends Component {
   constructor(props) {
@@ -29,7 +30,7 @@ class App extends Component {
     return (
       <Container id="container">
      <TopHeader/>
-      <h1>Lets play</h1>
+     
         <button data-cy="rock-button" name="rock" onClick={this.startGame}>
           Rock
         </button>
@@ -47,6 +48,7 @@ class App extends Component {
         <p data-cy="tie-message">It's a tie!</p>
         <p data-cy="human-wins">You win!</p>
         <p data-cy="computer-wins">Computer wins!</p>
+        <Footer/>
       </Container>
     );
   }
