@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Container } from 'semantic-ui-react'
 import winner from "./modules/ChoosingAWinner";
 import TopHeader from './components/TopHeader'
+import DisplayRules from './components/DisplayRules'
 import Footer from './components/Footer'
 
 class App extends Component {
@@ -30,6 +31,7 @@ class App extends Component {
     return (
       <Container id="container">
      <TopHeader/>
+     <DisplayRules/>
      
         <button data-cy="rock-button" name="rock" onClick={this.startGame}>
           Rock
