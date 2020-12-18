@@ -7,13 +7,14 @@ class App extends Component {
     super(props);
     this.weapons = ["rock", "paper", "scissors"];
     this.state = {
-      humanChoice: "",
+      humanChoice: ''
     };
   }
 
   startGame = async (e) => {
-    const game = Math.floor(Math.random() * 3);
-    const result = await winner(e.target.name, this.weapons[game]);
+    const choice = Math.floor(Math.random() * 3);
+    console.log(this.weapons[choice])
+    const result = winner(e.target.name, this.weapons[choice]);
     this.setState({ result: result });
   };
 
@@ -26,22 +27,24 @@ class App extends Component {
 
     return (
       <>
-        <button data-cy="rock-button" onClick={this.startGame}>
+      <h1>Lets play</h1>
+        <button data-cy="rock-button" name="rock" onClick={this.startGame}>
           Rock
         </button>
-        <button data-cy="paper-button" onClick={this.startGame}>
+        <button data-cy="paper-button" name="paper" onClick={this.startGame}>
           Paper
         </button>
-        <button data-cy="scissors-button" onClick={this.startGame}>
+        <button data-cy="scissors-button" name="scissors" onClick={this.startGame}>
           Scissors
         </button>
 
+<div>{result}</div>
         {/* <button data-cy="rock-computer">Rock</button>
         <button data-cy="paper-computer">Paper</button>
         <button data-cy="scissors-computer">Scissors</button> */}
-        <p data-cy="tie-message">It's a tie!</p>
+        {/* <p data-cy="tie-message">It's a tie!</p>
         <p data-cy="human-wins">You win!</p>
-        <p data-cy="computer-wins">Computer wins!</p>
+        <p data-cy="computer-wins">Computer wins!</p> */}
       </>
     );
   }
