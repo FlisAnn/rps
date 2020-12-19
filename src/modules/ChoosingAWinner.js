@@ -3,32 +3,26 @@ const winner = (humanChoice, computerChoice) => {
 
   switch (true) {
     case humanChoice == "rock" && computerChoice == "rock":
-      return result = (`Computer picked ${computerChoice} so it's a tie!`);
+      return (result = `It's a Tie! Computer also picked ${computerChoice}`);
     case humanChoice == "rock" && computerChoice == "scissors":
-      return result = (`Computer picked ${computerChoice} so you win!`);
+      return (result = `You win! Computer picked ${computerChoice}`);
     case humanChoice == "rock" && computerChoice == "paper":
-      return result = (`Computer picked ${computerChoice} so Computer wins!`);
+      return (result = `Computer wins! Computer picked ${computerChoice}`);
 
     case humanChoice == "paper" && computerChoice == "paper":
-      return result = (`Computer picked ${computerChoice} so it's a tie!`);
+      return (result = `It's a Tie! Computer also picked ${computerChoice}`);
     case humanChoice == "paper" && computerChoice == "rock":
-      return result = (`Computer picked ${computerChoice} so you win!`);
+      return (result = `You win! Computer picked ${computerChoice}`);
     case humanChoice == "paper" && computerChoice == "scissors":
-      return result = (`Computer picked ${computerChoice} so Computer wins!`);
+      return (result = `Computer wins! Computer picked ${computerChoice}`);
 
     case humanChoice == "scissors" && computerChoice == "scissors":
-      return result = (`Computer picked ${computerChoice} so it's a tie!`);
+      return (result = `It's a Tie! Computer also picked ${computerChoice}`);
     case humanChoice == "scissors" && computerChoice == "paper":
-      return result = (`Computer picked ${computerChoice} so you win!`);
+      return (result = `You win! Computer picked ${computerChoice}`);
     case humanChoice == "scissors" && computerChoice == "rock":
-      return result = (`Computer picked ${computerChoice} so Computer wins!`);
+      return (result = `Computer wins! Computer picked ${computerChoice}`);
   }
   return result;
 };
 export default winner;
-
-
-
-// `Computer selected ${computerChoice} and it is a tie`
-// `Computer selected ${computerChoice} and you won!`
-// `Computer selected ${computerChoice} and Computer won!`

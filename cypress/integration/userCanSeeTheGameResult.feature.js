@@ -9,12 +9,12 @@ describe("User can see the result of the game", () => {
     });
     it("and Human selects rock it is a tie", () => {
       cy.get("[data-cy='rock-button']").click();
-      cy.get("[data-cy='result']").should("contain", "tie!");
+      cy.get("[data-cy='result']").should("contain", "It's a Tie!");
     });
 
     it("and Human selects paper Human wins", () => {
       cy.get("[data-cy='paper-button']").click();
-      cy.get("[data-cy='result']").should("contain", "you win!");
+      cy.get("[data-cy='result']").should("contain", "You win!");
     });
 
     it("and Human selects scissors then Computer wins", () => {
@@ -34,12 +34,12 @@ describe("User can see the result of the game", () => {
 
     it("and Human selects paper it is a tie", () => {
       cy.get("[data-cy='paper-button']").click();
-      cy.get("[data-cy='result']").should("contain", "tie!");
+      cy.get("[data-cy='result']").should("contain", "It's a Tie!");
     });
 
     it("and Human selects scissors Human wins", () => {
       cy.get("[data-cy='scissors-button']").click();
-      cy.get("[data-cy='result']").should("contain", "you win!");
+      cy.get("[data-cy='result']").should("contain", "You win!");
     });
 
     it("and Human selects rock then Computer wins", () => {
@@ -59,12 +59,12 @@ describe("User can see the result of the game", () => {
 
     it("and Human selects scissors it is a tie", () => {
       cy.get("[data-cy='scissors-button']").click();
-      cy.get("[data-cy='result']").should("contain", "tie!");
+      cy.get("[data-cy='result']").should("contain", "It's a Tie!");
     });
 
     it("and Human selects rock Human wins", () => {
       cy.get("[data-cy='rock-button']").click();
-      cy.get("[data-cy='result']").should("contain", "you win!");
+      cy.get("[data-cy='result']").should("contain", "You win!");
     });
 
     it("and Human selects paper Computer wins", () => {

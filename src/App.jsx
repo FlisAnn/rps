@@ -5,6 +5,7 @@ import {
   Grid,
   Header,
   Segment,
+  Message,
 } from "semantic-ui-react";
 import winner from "./modules/ChoosingAWinner";
 import TopHeader from "./components/TopHeader";
@@ -82,11 +83,11 @@ class App extends Component {
             </Grid.Row>
           </Grid>
         </Segment>
-        <div data-cy="result">{result}</div>
-
-        {/* <p data-cy="tie-message">It's a tie!</p>
-        <p data-cy="human-wins">You win!</p>
-        <p data-cy="computer-wins">Computer wins!</p> */}
+        <Message data-cy="result">
+        <Message.Header >
+          {result}
+        </Message.Header>
+        </Message>
         <Footer />
       </Container>
     );
