@@ -44,7 +44,7 @@ class App extends Component {
             <Grid.Row verticalAlign="middle">
               <Grid.Column>
                 <Header as="h2" color="grey">
-                  Pick your weapon
+                  Pick your weapon 
                 </Header>
                 <Grid.Row icon>
                   <Button.Group>
