@@ -63,12 +63,12 @@ describe("User can see the result of the game", () => {
     });
 
     it("and Human selects rock Human wins", () => {
-      cy.get("[data-cy='scissors-button']").click();
+      cy.get("[data-cy='rock-button']").click();
       cy.get("[data-cy='result']").should("contain", "you win!");
     });
 
     it("and Human selects paper Computer wins", () => {
-      cy.get("[data-cy='scissors-button']").click();
+      cy.get("[data-cy='paper-button']").click();
       cy.get("[data-cy='result']").should("contain", "Computer wins!");
     });
   });
