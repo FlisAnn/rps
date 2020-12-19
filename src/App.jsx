@@ -16,7 +16,7 @@ import Footer from "./components/Footer";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.weapons = ["rock", "paper", "scissors"];
+    this.weapons = ["Rock", "paper", "scissors"];
     this.state = {
       humanChoice: "",
     };
@@ -40,8 +40,50 @@ class App extends Component {
       <Container id="container">
         <TopHeader />
         <DisplayRules />
-
-        <Segment placeholder color="teal">
+        <Button data-cy="rock-button" name="rock" onClick={this.startGame}>
+          Rock
+        </Button>
+        <Button data-cy="paper-button" name="paper" onClick={this.startGame}>
+          Paper
+        </Button>
+        <Button data-cy="scissors-button" name="scissors" onClick={this.startGame}>
+          Scissors
+        </Button>
+        <div id = "result">{result}</div>
+        {/* <div>
+          <button
+            name="Rock"
+            data-cy="rock-button"
+            link onClick={this.startGame}
+            
+            name="hand rock outline"
+            size="huge"
+            color="pink"
+          />
+          </div>
+          <div>
+           <Icon
+            name="paper"
+            data-cy="paper-button"
+            link onClick={this.startGame}
+            name="hand paper outline"
+            size="huge"
+            color="pink"
+          />
+          </div>
+          <div>
+           <Icon
+            name="scissors"
+            data-cy="scissors-button"
+            link onClick={this.startGame}
+        
+            name="hand scissors outline"
+            size="huge"
+            color="pink"
+          />
+        </div> */}
+       
+        {/* <Segment placeholder color="teal">
           <Grid columns={2} stackable textAlign="center">
             <Divider vertical>VS</Divider>
 
@@ -52,12 +94,20 @@ class App extends Component {
                 </Header>
                 <Grid.Row icon>
                   <Button.Group>
-                    <Button icon data-cy="rock-button" onClick={this.startGame}>
-                      <Icon name="hand rock outline" size="huge" color="pink" />
+                    <Button icon data-cy="rock-button">
+                      <Icon
+                        name="Rock"
+                        data-cy="rock-button"
+                        onClick={this.startGame}
+                        name="hand rock outline"
+                        size="huge"
+                        color="pink"
+                      />
                     </Button>
                     <Button.Or />
                     <Button
                       icon
+                      name="paper"
                       data-cy="paper-button"
                       onClick={this.startGame}
                     >
@@ -90,7 +140,7 @@ class App extends Component {
               </Grid.Column>
             </Grid.Row>
           </Grid>
-        </Segment>
+        </Segment> */}
 
         {/* <button data-cy="rock-button" name="rock" onClick={this.startGame}>
           Rock
@@ -102,13 +152,13 @@ class App extends Component {
           Scissors
         </button> */}
 
-        <div>{result}</div>
+        
         {/* <button data-cy="rock-computer">Rock</button>
         <button data-cy="paper-computer">Paper</button>
-        <button data-cy="scissors-computer">Scissors</button> */}
-        <p data-cy="tie-message">It's a tie!</p>
+        <button data-cy="scissors-computer">Scissors</button> */} 
+        {/* <p data-cy="tie-message">It's a tie!</p>
         <p data-cy="human-wins">You win!</p>
-        <p data-cy="computer-wins">Computer wins!</p>
+        <p data-cy="computer-wins">Computer wins!</p> */}
         <Footer />
       </Container>
     );
