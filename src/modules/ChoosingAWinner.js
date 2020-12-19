@@ -3,25 +3,25 @@ const winner = (humanChoice, computerChoice) => {
 
   switch (true) {
     case humanChoice == "rock" && computerChoice == "rock":
-      return result = ("It's a tie!");
+      return result = (`Computer picked ${computerChoice} so it's a tie!`);
     case humanChoice == "rock" && computerChoice == "scissors":
-      return result = ("You win!");
+      return result = (`Computer picked ${computerChoice} so you win!`);
     case humanChoice == "rock" && computerChoice == "paper":
-      return result = ("Computer wins!");
+      return result = (`Computer picked ${computerChoice} so Computer wins!`);
 
     case humanChoice == "paper" && computerChoice == "paper":
-      return result = ("It's a tie!");
+      return result = (`Computer picked ${computerChoice} so it's a tie!`);
     case humanChoice == "paper" && computerChoice == "rock":
-      return result = ("You win!");
+      return result = (`Computer picked ${computerChoice} so you win!`);
     case humanChoice == "paper" && computerChoice == "scissors":
-      return result = ("Computer wins!");
+      return result = (`Computer picked ${computerChoice} so Computer wins!`);
 
     case humanChoice == "scissors" && computerChoice == "scissors":
-      return result = ("It's a tie!");
+      return result = (`Computer picked ${computerChoice} so it's a tie!`);
     case humanChoice == "scissors" && computerChoice == "paper":
-      return result = ("You win!");
+      return result = (`Computer picked ${computerChoice} so you win!`);
     case humanChoice == "scissors" && computerChoice == "rock":
-      return result = ("Computer wins!");
+      return result = (`Computer picked ${computerChoice} so Computer wins!`);
   }
   return result;
 };

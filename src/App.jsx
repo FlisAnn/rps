@@ -2,10 +2,8 @@ import React, { Component } from "react";
 import {
   Container,
   Button,
-  Divider,
   Grid,
   Header,
-  Icon,
   Segment,
 } from "semantic-ui-react";
 import winner from "./modules/ChoosingAWinner";
@@ -16,7 +14,7 @@ import Footer from "./components/Footer";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.weapons = ["Rock", "paper", "scissors"];
+    this.weapons = ["rock", "paper", "scissors"];
     this.state = {
       humanChoice: "",
     };
@@ -40,34 +38,7 @@ class App extends Component {
       <Container id="container">
         <TopHeader />
         <DisplayRules />
-
-        {/* <Button
-          data-cy="rock-button"
-          name="rock"
-          onClick={this.startGame}
-          color="pink"
-        >
-          Rock
-        </Button>
-        <Button
-          data-cy="paper-button"
-          name="paper"
-          onClick={this.startGame}
-          color="yellow"
-        >
-          Paper
-        </Button>
-        <Button
-          data-cy="scissors-button"
-          name="scissors"
-          onClick={this.startGame}
-          color="teal"
-        >
-          Scissors
-        </Button> */}
-        
-
-        <Segment placeholder color="teal">
+        <Segment>
           <Grid columns={2} stackable textAlign="center">
             <Grid.Row verticalAlign="middle">
               <Grid.Column>
@@ -81,6 +52,7 @@ class App extends Component {
                       name="rock"
                       onClick={this.startGame}
                       color="pink"
+                      size="huge"
                     >
                       Rock
                     </Button>
@@ -90,6 +62,7 @@ class App extends Component {
                       name="paper"
                       onClick={this.startGame}
                       color="yellow"
+                      size="huge"
                     >
                       Paper
                     </Button>
@@ -99,6 +72,7 @@ class App extends Component {
                       name="scissors"
                       onClick={this.startGame}
                       color="teal"
+                      size="huge"
                     >
                       Scissors
                     </Button>
@@ -108,10 +82,8 @@ class App extends Component {
             </Grid.Row>
           </Grid>
         </Segment>
-        <div id="result">{result}</div>
-       
+        <div data-cy="result">{result}</div>
 
-    
         {/* <p data-cy="tie-message">It's a tie!</p>
         <p data-cy="human-wins">You win!</p>
         <p data-cy="computer-wins">Computer wins!</p> */}
