@@ -22,6 +22,7 @@ const winner = (humanChoice, computerChoice) => {
       return (result = `You win! Computer picked ${computerChoice}`);
     case humanChoice === "scissors" && computerChoice === "rock":
       return (result = `Computer wins! Computer picked ${computerChoice}`);
+    default:
   }
   return result;
 };
