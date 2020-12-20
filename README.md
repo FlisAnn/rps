@@ -20,3 +20,31 @@ I want to see the result of the game
 ```
 
 ### Links
+
+This application is deployed with Netlify and can be found here: https://rsp-challange.netlify.app/
+Github-repo: https://github.com/FlisAnn/rps
+
+### Testing framework
+Cypress
+
+### Dependencies
+Please run the following command:
+```
+yarn install
+```
+
+### Packages
+- Cypress
+- Semantic-ui-react
+- React
+- React-router-dom
+
+### Acknowledgements
+- Course material from Craft Academy
+- React documentation
+- React Semantic Documentation
+- Google
+  
+
+### Licence
+MIT Licence
