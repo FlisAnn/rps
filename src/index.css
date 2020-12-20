@@ -14,10 +14,11 @@ footer {
   left: 0;
   right: 0;
   width: 100%;
+  padding-top: 10px;
   height: 40px;
   background-color: #f7c1ca;
   text-align: center;
-  color: gray;
+  color: rgb(149, 135, 135);
   z-index: 999;
 }
 
